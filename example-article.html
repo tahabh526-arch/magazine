@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Write Your First Article - The Simple Magazine</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>The Simple Magazine</h1>
+        <p>A brutally simple publication</p>
+    </header>
+
+    <a href="../index.html" class="back-link">← Back to all articles</a>
+
+    <main>
+        <article class="full-article">
+            <h1>How to Write Your First Article</h1>
+            <p class="meta">January 14, 2026 • Jane Smith</p>
+
+            <p>Publishing an article on this platform takes less than 2 minutes. Here's exactly how to do it.</p>
+
+            <h2>Step 1: Copy the Template</h2>
+            
+            <p>Open <code>article-template.html</code> in any text editor. This file has everything you need pre-configured.</p>
+
+            <h2>Step 2: Write Your Article</h2>
+
+            <p>Replace the placeholder content with your own text. You can use these HTML tags:</p>
+
+            <ul>
+                <li><code>&lt;p&gt;</code> for paragraphs</li>
+                <li><code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> for headings</li>
+                <li><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for bullet lists</li>
+                <li><code>&lt;blockquote&gt;</code> for quotes</li>
+                <li><code>&lt;code&gt;</code> for inline code</li>
+            </ul>
+
+            <p>Don't worry about styling—the CSS handles everything automatically.</p>
+
+            <h2>Step 3: Save the File</h2>
+
+            <p>Save your article in the <code>articles/</code> folder with a descriptive filename like:</p>
+
+            <pre><code>articles/my-great-article.html</code></pre>
+
+            <p>Use lowercase letters and hyphens instead of spaces.</p>
+
+            <h2>Step 4: Add a Link on the Homepage</h2>
+
+            <p>Open <code>index.html</code> and find the section marked "ADD NEW ARTICLES HERE". Copy one of the existing article preview blocks and modify it:</p>
+
+            <pre><code>&lt;article class="article-preview"&gt;
+    &lt;h2&gt;&lt;a href="articles/my-great-article.html"&gt;My Article Title&lt;/a&gt;&lt;/h2&gt;
+    &lt;p class="meta"&gt;January 14, 2026 • Your Name&lt;/p&gt;
+    &lt;p&gt;A brief description of your article.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+            <h2>Step 5: Commit and Push</h2>
+
+            <p>Commit your changes to GitHub:</p>
+
+            <pre><code>git add .
+git commit -m "Add new article"
+git push</code></pre>
+
+            <p>Your article will be live on GitHub Pages within a minute or two.</p>
+
+            <h2>That's It</h2>
+
+            <p>No build process, no database updates, no configuration files to edit. Just pure, simple HTML.</p>
+
+            <blockquote>
+                "The best tools are invisible. The best workflows are effortless."
+            </blockquote>
+
+        </article>
+    </main>
+
+    <footer>
+        <p><a href="../submit.html">Submit an Article</a> | Built with pure HTML</p>
+    </footer>
+</body>
+</html>
